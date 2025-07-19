@@ -16,4 +16,4 @@ jobs:
       - name: Processing something
         run: |
           sleep 60
-          echo "I am done!"
+          echo "I am done! "
