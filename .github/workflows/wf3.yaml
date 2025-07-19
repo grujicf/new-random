@@ -7,6 +7,9 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    concurrency:
+      group: our-group
+      cancel-in-progress: false
 
     steps:
       - name: Processing something
@@ -16,6 +19,9 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
+    concurrency:
+      group: our-group
+      cancel-in-progress: false
 
     steps:
       - name: Processing something
