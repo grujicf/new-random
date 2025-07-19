@@ -15,5 +15,5 @@ jobs:
     steps:
       - name: Processing something
         run: |
-          sleep 10
-          echo "I am done! "
+          sleep 60
+          echo "I am done!"
