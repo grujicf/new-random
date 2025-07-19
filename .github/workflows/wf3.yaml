@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: our-group
-      cancel-in-progress: false
+      cancel-in-progress: true
 
     steps:
       - name: Processing something
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: our-group
-      cancel-in-progress: false
+      cancel-in-progress: true
 
     steps:
       - name: Processing something
