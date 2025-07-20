@@ -8,6 +8,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: Where am i
+        run: pwd
       - name: Hello
         uses: ./hello
       - name: Done
