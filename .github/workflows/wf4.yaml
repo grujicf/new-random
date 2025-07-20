@@ -6,6 +6,7 @@ on:
 
 jobs:
   job1:
+    runs-on: ubuntu-latest
     steps:
       - name: Hello
         uses: grujicf/random-akcija@main
