@@ -1,8 +1,8 @@
-name: Workflow 4
+name: Workflow 5
 
 on:
   push:
-    branches: feat
+    branches: main
 
 jobs:
   job1:
@@ -12,7 +12,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Where am i
         run: pwd
-      - name: Hello
-        uses: ./hello
+      - name: List files
+        run: ls
+      - name: Make directory
+        uses: ./make-dir
+      - name: List files
+        run: ls
       - name: Done
         run: echo "I am done!"
