@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello
-        uses: grujicf/new-random
+        uses: grujicf/new-random@main
       - name: Done
         run: echo "I am done!"
