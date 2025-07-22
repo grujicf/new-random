@@ -8,9 +8,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Call action
-        uses: ./github/workflows
+      - name: Call workflow
+        uses: ./github/workflows/callable.yaml
       - name: Done
         run: echo "I am done!"
