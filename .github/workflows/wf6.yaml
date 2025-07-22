@@ -6,7 +6,6 @@ on:
 
 jobs:
   job1:
-    runs-on: ubuntu-latest
     uses: ./.github/workflows/callable.yaml
 
   job2:
