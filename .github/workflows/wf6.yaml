@@ -2,7 +2,7 @@ name: Workflow 5
 
 on:
   push:
-    branches: feat
+    branches: main
 
 jobs:
   job1:
