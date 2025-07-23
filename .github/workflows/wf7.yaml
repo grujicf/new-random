@@ -17,3 +17,8 @@ jobs:
         run: echo ${{vars.USERNAME}}
       - name: Print Username 3
         run: echo ${{env.USERNAME}}
+      - name: Manipulate with files
+        run: | # this should not work
+          touch file
+          ${{env.USERNAME}} > file
+          cat file
