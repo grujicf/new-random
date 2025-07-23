@@ -8,5 +8,7 @@ jobs:
   job1:
     runs-on: ubuntu-lates
     steps:
-      - name: Print Username
+      - name: Print Username 1 
         run: echo $USERNAME
+      - name: Print Username 2
+        run: echo ${{vars.USERNAME}}
