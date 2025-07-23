@@ -23,4 +23,5 @@ jobs:
           ${{env.USERNAME}} > file
           cat file
       - name: DONE!
+        if: always()
         run: echo "I am done!"
