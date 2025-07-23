@@ -1,0 +1,12 @@
+name: Workflow 6
+
+on:
+  push:
+    branches: main
+
+jobs:
+  job1:
+    runs-on: ubuntu-lates
+    steps:
+      - name: Print Username
+        run: echo $USERNAME
