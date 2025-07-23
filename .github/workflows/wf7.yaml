@@ -25,3 +25,8 @@ jobs:
       - name: DONE!
         if: always()
         run: echo "I am done!"
+      - name: Manipulate with files (correct version)
+        run: |
+          touch file
+          echo ${{env.USERNAME}} > file
+          cat file
