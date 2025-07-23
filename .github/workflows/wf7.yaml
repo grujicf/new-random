@@ -6,7 +6,7 @@ on:
 
 jobs:
   job1:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - name: Print Username 1 
         run: echo $USERNAME
