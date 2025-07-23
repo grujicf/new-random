@@ -22,3 +22,5 @@ jobs:
           touch file
           ${{env.USERNAME}} > file
           cat file
+      - name: DONE!
+        run: echo "I am done!"
