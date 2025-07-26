@@ -30,4 +30,4 @@ jobs:
         run: |
           touch file
           echo ${{env.USERNAME}} > file
-          cat file
+          cat file 
