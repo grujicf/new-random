@@ -6,4 +6,4 @@ runs:
   steps:
     - name: make dir
       run: mkdir new-dir
-      shell: bash
+      shell: bash 
